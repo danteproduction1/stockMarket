@@ -1,0 +1,217 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+	list-style-type: none;
+	text-decoration: none;
+	text-decoration: none;
+}
+
+
+/*=====header====*/
+.bag-header{
+	margin-top: -50px;
+	margin-bottom: 40px;
+	width: 100vw;
+	height: 90px;
+	position: fixed;
+	background-color: blue;
+	display: flex;
+	z-index: 1;
+}
+
+.bag-header img{
+	margin-top: 1.5rem;
+	margin-left: 2rem;
+	width: 120px;
+	height: 60px;
+	border: none;
+}
+.bag-header ul li{
+	display: inline-block;
+	text-align: right;
+	padding-left: 3rem;
+}
+.bag-header ul li a{
+	text-align: center;
+	line-height: 90px;
+	color: white;
+	font-size: 25px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+/*=====body====*/
+.bags-body{
+	top: 30px;
+	width: 90%;
+	position: relative;
+	margin-left: 5%;
+	display: grid;
+	grid-template-columns: 35% 65%;
+	grid-gap: 10px;
+}
+.left-top-side{
+	margin-top: 30px;
+	display: block;
+	background-color: whitesmoke;
+	padding: 10px;
+	width: fit-content;
+	height: fit-content;
+	border: 1px solid whitesmoke;
+	box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.left-side{
+	margin-top: 50px;
+	display: block;
+	background-color: whitesmoke;
+	padding: 20px;
+	width: fit-content;
+	height: max-content;
+	border: 1px solid whitesmoke;
+	box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.left-side h3{
+	color: indigo;
+	font-size: 25px;
+}
+
+.left-side p{
+	padding-top: 5px;
+	font-size: 12px;
+}
+
+.right-side{
+	display: inline-block;
+}
+
+.right-side h3{
+	padding-bottom: 20px;
+	color: indigo;
+	font-size: 25px;
+	text-align: center;
+}
+
+.bag-items{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+}
+
+.details-of-bag{
+	background-color: whitesmoke;
+	display: inline-block;
+	height: 420px;
+	width: 350px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+
+.details-of-bag:hover{
+	box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
+	transition: all ease 0.2s;
+}
+
+.details-of-bag a{
+		color: brown;
+}
+.details-of-bag img{
+	width: 350px;
+	height: 300px;
+}
+.details-of-bag .name-price h5{
+	padding-left: 50px;
+	font-size: 15px;
+	color: brown;
+}
+
+/*======footer====*/
+
+.footer{
+	margin-top: 20px;
+	margin-left: -55px;
+	width: 100vw;
+	height: 400px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75));
+	display: grid;
+	grid-template-rows: 75% 25%;
+}
+.footer-top{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.footer-top-payments h4{
+	padding: 20px;
+}
+.footer-top-payments h4 a{
+	color: white;
+}
+.footer ul li{
+	padding-top: 20px;
+}
+.footer ul li a{
+	color: white;
+}
+.footer p{
+	margin-top: 20px;
+	padding-left: 300px;
+	color: cadetblue;
+}
+
+/*====responsiveness====*/
+@media screen and (max-width: 1200px){
+	.bags-body{
+		display: inline-block;
+	}
+	.left-top-side p{
+		font-size: 15px;
+	}
+	.left-side{
+		width: 90vw;
+	}
+	.bag-header{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height: fit-content;
+	}
+	.bag-header img{
+		display: none;
+	}
+	.bag-header ul li{
+		padding-left: 5px;
+	}
+
+	.bag-header ul li a{
+			font-size: 25px;
+	}
+	.left-side h3{
+		font-size: 25px;
+	}
+	.right-side h3{
+		font-size: 25px;
+	}
+	.right-side{
+		margin-left: 10%;
+		width: 90%;
+	}
+	.details-of-bag{
+		height: 300px;
+		width: 300px;
+		border-radius: 4px;
+		margin-bottom: 10px;
+	}
+	.details-of-bag img{
+		width: 300px;
+		height: 200px;
+	}
+	.footer{
+		margin-left: 0px;
+	}
+
+}
+
+

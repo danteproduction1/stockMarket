@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let width = prompt('Enter width: ')
+		let length = prompt('Enter length: ')
+		let area = getArea(width, length)
+
+		console.log(area)
+
+		function getArea(width, length){
+			result = width * length
+			return result > 200 ? 'Bigger Object': 'Smaller Object'
+		}
+	</script>
+</body>
+</html>

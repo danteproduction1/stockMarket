@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h4>Temperaturen Converter</h4>
+	<label>Enter temperature</label><br>
+	<input type="text" id="tempValue"><br>
+	<p>Choose format:</p>
+	<input type="radio" id="cBtn" name="unit">
+	<label>Celcius</label><br>
+	<input type="radio" id="fBtn" name="unit">
+	<label>Fahrenheit</label><br>
+
+	<button type="button" id="submitBtn">Submit</button>
+	
+	<h4>Result:</h4>
+	<label id="result"></label>
+
+
+
+	<script type="text/javascript">
+		document.getElementById('submitBtn').onclick = function(){
+			let temp
+			if (document.getElementById('cBtn').checked) {
+				temp = temp = document.getElementById('tempValue').value
+				temp = Number(temp)
+				temp = toCelcius(temp)
+				document.getElementById('result').innerHTML = temp
+			}else if (document.getElementById('fBtn').checked) {
+				temp = temp = document.getElementById('tempValue').value
+				temp = Number(temp)
+				temp = toFahrenheit(temp)
+				document.getElementById('result').innerHTML = temp
+			}else{
+				document.getElementById('result').innerHTML = 'Please choose format!'
+			}
+		}
+
+
+
+		function toCelcius(temp){
+			return temp = (temp - 32) * (5/9)
+		}
+
+		function toFahrenheit(temp){
+			return temp = temp * (9/5) + 32
+		}
+
+	</script>
+</body>
+</html>
